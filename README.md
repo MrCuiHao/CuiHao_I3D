@@ -5,3 +5,5 @@
 
 2、#data_preprocess/convert_images_to_list.py
 这是把抽取好的RGB和光流结果转换成训练验证、测试列表..
+
+3、后续会把I3D的训练步骤补充完整，敬请期待
