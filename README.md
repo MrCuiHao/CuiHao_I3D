@@ -5,8 +5,11 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 关于I3D的模型和细节请参考kinetics-i3d
 
 **二、环境条件**
-**软件**  
+
+**软件**
+
 **硬件**
+
 **、数据预处理**
 
 **、数据预处理**
