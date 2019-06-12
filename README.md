@@ -1,8 +1,23 @@
 **一、引言**
 
-整个代码在UCF101数据集上微调I3D模型，包括训练阶段和测试阶段。
+  整个代码在UCF101数据集上微调I3D模型，包括训练阶段和测试阶段。
 I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset》
 关于I3D的模型和细节请参考kinetics-i3d
+
+**二、环境条件**
+  软件
+    Ubuntu 16.04.3 LTS
+    Python 2.7
+    CUDA8
+    CuDNN v6
+    Tensorflow 1.4.1
+    Sonnet
+
+**、数据预处理**
+
+**、数据预处理**
+
+**、数据预处理**
 
 **、数据预处理**
 
