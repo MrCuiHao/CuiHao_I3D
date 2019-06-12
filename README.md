@@ -6,9 +6,17 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 
 **二、环境条件**
 
-**软件**
+  **软件**
+  
+    Ubuntu 16.04.3 LTS
+    Python 2.7
+    CUDA8
+    CuDNN v6
+    Tensorflow 1.4.1
+    Sonnet
 
-**硬件**
+  **硬件**
+    GeForce GTX 1080 Ti
 
 **、数据预处理**
 
@@ -26,4 +34,3 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 
 3、后续会把I3D的训练步骤补充完整，敬请期待
 
-4、test test
