@@ -16,6 +16,7 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
     Sonnet
 
   **硬件**
+  
     GeForce GTX 1080 Ti
 
 **、数据预处理**
