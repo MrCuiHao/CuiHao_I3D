@@ -22,12 +22,12 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 **三、数据预处理**
 
 1、#data_preprocess/denseflow.py
-把视频文件处理成RGB和光流数据,RGB就是从视频中一帧帧抽取的图片，光流是使用光流算法TVL1计算的结果，如图所示:
+把视频文件处理成RGB和光流数据,RGB就是从视频中一帧帧抽取的图片，光流是使用光流算法TVL1计算的结果
 
-2、#data_preprocess/convert_images_to_list.py
+2、#data_preprocess/[(rgb|flow).txt].py
 这是把抽取好的RGB和光流结果转换成训练验证、测试列表..
 
-3、后续会把RGB和光流的生成步骤补充完整，这里你们可以使用我总结的生成训练验证集、测试集的工具，如果你们有更好的方法
+3、后续会把RGB和光流的生成步骤补充完整，这里你们可以先使用我总结的工具，如果你们有更好的方法
 可以联系我，代码也可以提交给我，敬请期待。
 
 
