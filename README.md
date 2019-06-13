@@ -27,8 +27,11 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 
 2.下载在kinetics数据集上预训练的I3D模型
 
-    为了在UCF101数据集上微调I3D网络，必须要下载在kinetics数据集上预训练的I3D模型，
-    此模型由DeepMind提供，下载链接：https://github.com/deepmind/kinetics-i3d/tree/master/data
+    为了在UCF101数据集上微调I3D网络，必须要下载在kinetics数据集上预训练的I3D模型，此模型由DeepMind提供，
+    先从github下载仓库kinetics-i3d，然后把仓库里的文件夹data/checkpoints放入我们CuiHao_I3D仓库的子目录data里。
+    
+    git clone https://github.com/deepmind/kinetics-i3d
+    cp -r kinetics-i3d/data/checkpoints CuiHao_I3D/data
 
 **、数据预处理**
 
