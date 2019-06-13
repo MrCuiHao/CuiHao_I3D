@@ -23,7 +23,11 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 
 1.克隆下面的仓库
 
-    git@github.com:MrCuiHao/CuiHao_I3D.git
+    git clone git@github.com:MrCuiHao/CuiHao_I3D.git
+
+2.下载在kinetics数据集上预训练的I3D模型
+
+    为了在UCF101数据集上微调I3D网络，必须要下载在kinetics数据集上预训练的I3D模型，此模型由DeepMind提供，下载链接：https://github.com/deepmind/kinetics-i3d/tree/master/data 。
 
 **、数据预处理**
 
