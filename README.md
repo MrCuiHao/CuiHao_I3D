@@ -46,8 +46,9 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
         cp -r kinetics-i3d/data/checkpoints CuiHao_I3D/data
 3.创建列表文件
 
-    使用data/ucf101/子目录里的列表文件，从而使得代码能找到保存在磁盘上的RGB图片和光流数据。必须要采用列表文件，以确保列表
-    文件包含数据对应的路径是正确的。具体来说，对于RGB数据，必须更新data/ucf101/rgb.txt。在这个文件的每一个行应该用一下格式：
+    使用data/ucf101/子目录里的列表文件，从而使得代码能找到保存在磁盘上的RGB图片和光流数据。必须要采用列表文件，以确保列表文
+    件包含数据对应的路径是正确的。具体来说，对于RGB数据，必须更新data/ucf101/rgb.txt。在这个文件的每一个行应该用一下格式：
+    
         dir_name_of_imgs_of_a_video /path/to/img_dir num_imgs label
 
 **、数据预处理**
