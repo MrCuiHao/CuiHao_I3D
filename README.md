@@ -51,6 +51,23 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
     
         dir_name_of_imgs_of_a_video /path/to/img_dir num_imgs label
         视频图片所在目录名(视频名--去掉.avi .mp4这种格式名后的名字) 视频图片目录对应的绝对路径 图片的数目 视频对应的类别
+    
+    例如，如果你的UCF101数据集对应的RGB数据被保存在‘path/data/ucf101/rgb',path指并且在这个文件夹有13320个子目录，每一个
+    子目录包含视频的图片。如果在子目录v_BalanceBeam_g14_c02中有96张图片,然后这个视频所属的类别对应的数字是4，那么这个子目
+    录对应rgb.txt的行内容如下： 
+
+        v_BalanceBeam_g14_c02 /data/user/ucf101/rgb/v_BalanceBeam_g14_c02 96 4
+     
+     相似地，为光流数据更新data/ucf101/flow.txt。注意:使用一个文件包括光流数据的x和y部分，所以在每一行使用{：s}来置换数据
+     路径的x或者y。例如，如果光流数据被放成像这样的结构：
+        |---tvl1_flow
+        |   |---x
+        |   |---y
+     
+     那么你可以在flow.txt里面写成每一行内容像下面这样：
+        v_Archery_g01_c06 /data4/zhouhao/dataset/ucf101/tvl1_flow/{:s}/v_Archery_g01_c06 107 2
+     即，使用{：s}在路径中替换x或者y，如果感觉到困惑，请参考代码，看一看数据加载的细节。
+     
 
 **、数据预处理**
 
