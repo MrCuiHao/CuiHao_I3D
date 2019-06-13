@@ -27,7 +27,8 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
 2、#data_preprocess/convert_images_to_list.py
 这是把抽取好的RGB和光流结果转换成训练验证、测试列表..
 
-3、后续会把I3D的训练步骤补充完整，敬请期待
+3、后续会把RGB和光流的生成步骤补充完整，这里你们可以使用我总结的生成训练验证集、测试集的工具，如果你们有更好的方法
+可以联系我，代码也可以提交给我，敬请期待。
 
 
 **四、如何运行**
@@ -44,6 +45,10 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
         git clone https://github.com/deepmind/kinetics-i3d
         cp -r kinetics-i3d/data/checkpoints CuiHao_I3D/data
 3.创建列表文件
+
+    使用data/ucf101/子目录里的列表文件，从而使得代码能找到保存在磁盘上的RGB图片和光流数据。必须要采用列表文件，以确保列表
+    文件包含数据对应的路径是正确的。具体来说，对于RGB数据，必须更新data/ucf101/rgb.txt。在这个文件的每一个行应该用一下格式：
+        dir_name_of_imgs_of_a_video /path/to/img_dir num_imgs label
 
 **、数据预处理**
 
