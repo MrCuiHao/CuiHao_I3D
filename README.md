@@ -59,7 +59,7 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
         v_BalanceBeam_g14_c02 /data/ucf101/rgb/v_BalanceBeam_g14_c02 96 4
      
     相似地，为光流数据更新data/ucf101/flow.txt。注意:使用一个文件包括光流数据的x和y部分，所以在每一行使用{：s}来置换数据
-    路径的x或者y。例如，如果光流数据被放成像这样的结构：
+    路径的x或者y。例如，如果光流数据被放在像这样的路径结构：
     
         |---tvl1_flow
         |   |---x
