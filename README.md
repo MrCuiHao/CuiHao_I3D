@@ -50,6 +50,7 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
     件包含数据对应的路径是正确的。具体来说，对于RGB数据，必须更新data/ucf101/rgb.txt。在这个文件的每一个行应该用一下格式：
     
         dir_name_of_imgs_of_a_video /path/to/img_dir num_imgs label
+        视频图片所在目录名（视频名--去掉.avi .mp4这种格式名后的名字）视频图片目录对应的绝对路径 图片的数目 视频对应的类别
 
 **、数据预处理**
 
