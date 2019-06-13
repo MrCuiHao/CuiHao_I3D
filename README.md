@@ -20,8 +20,10 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
     GeForce GTX 1080 Ti
 
 **三、如何运行**
+
 1.克隆下面的仓库
 
+    git@github.com:MrCuiHao/CuiHao_I3D.git
 
 **、数据预处理**
 
