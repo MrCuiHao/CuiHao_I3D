@@ -60,13 +60,16 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
      
     相似地，为光流数据更新data/ucf101/flow.txt。注意:使用一个文件包括光流数据的x和y部分，所以在每一行使用{：s}来置换数据
     路径的x或者y。例如，如果光流数据被放成像这样的结构：
+    
         |---tvl1_flow
         |   |---x
         |   |---y
      
-     那么你可以在flow.txt里面写成每一行内容像下面这样：
+    那么你可以在flow.txt里面写成每一行内容像下面这样：
+    
         v_Archery_g01_c06 /data/ucf101/tvl1_flow/{:s}/v_Archery_g01_c06 107 2
-     即，使用{：s}在路径中替换x或者y，如果感觉到困惑，请参考代码，看一看数据加载的细节。
+        
+    即，使用{：s}在路径中替换x或者y，如果感觉到困惑，请参考代码，看一看数据加载的细节。
      
 
 **、数据预处理**
