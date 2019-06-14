@@ -72,8 +72,23 @@ I3D文章:《Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
     即，使用{：s}在路径中替换x或者y，如果感觉到困惑，请参考代码，看一看数据加载的细节。
      
 
-**、数据预处理**
+**五、在UCF101的RGB和flow数据上进行训练**
 
-**、数据预处理**
+    #在UCF101的RGB数据上进行微调
+    CUDA_VISIBLE_DEVICES=0 python finetune.py ucf101 rgb 1
+    #在UCF101的flow数据上进行微调
+    CUDA_VISIBLE_DEVICES=0 python finetune.py ucf101 flow 2 
+    
+**六、在UCF101的RGB和flow数据上进行测试**
+
+
+    训练好了模型以后，可以运行测试步骤。首先，请通过在test.py文件中设置数据集以及在之前步骤中生成的训练好的模型的正确位置的值来更新
+      _DATA_ROOT和_CHECKPOINT_PATHS，然后你就能够使用以下命令来进行测试了。
+      # run testing on the split1 of RGB data of UCF101
+      CUDA_VISIBLE_DEVICES=0 python test.py ucf101 rgb 1
+      # run testing on the split1 of flow data of UCF101
+      CUDA_VISIBLE_DEVICES=0 python test.py ucf101 flow 1
+      # run testing both on RGB and flow data of split1 of UCF101
+      CUDA_VISIBLE_DEVICES=0 python test.py ucf101 mixed 1
 
 
